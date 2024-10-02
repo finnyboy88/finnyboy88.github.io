@@ -1,0 +1,150 @@
+html, body {
+    font-family: Arial, sans-serif;
+
+    scrollbar-width: thin;
+}
+
+.menu_bar {
+    height: 100vh; 
+    position: relative; 
+    overflow: hidden; 
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+#theme-color {
+    color: #2DD881;
+}
+
+header .logo, footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    color: black;
+}
+
+header .logo {
+    top: 20px;
+    left: 20px;
+} 
+
+nav.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav.menu ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 8px 16px;
+    transition: color 0.3s;
+}
+
+nav.menu ul li a:hover {
+    color: #C2E1C2;
+}
+
+.contact-button {
+    background-color: #2DD881;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #778472;
+}
+
+nav.menu ul li.dropdown {
+    position: relative;
+}
+
+nav.menu ul li .dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .seperation-line {
+    border-top: 3px solid #C2E1C2;
+    top: 20px;
+}
+
+.main-caption {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: black;
+    opacity: 0;
+    animation: fadeSlideIn 2s ease forwards;
+    animation-delay: .5s;
+}
+
+.design-caption {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    text-align: right;
+    color: black;
+    opacity: 0;
+    animation: fadeSlideIn 2s ease forwards;
+    animation-delay: .5s;
+}
+
+.main-caption h1 {
+    font-size: 140px;
+    margin: 0;
+}
+
+.main-caption h2 {
+    font-size: 32px;
+    margin-top: 20px;
+    color: black;
+}
+
+.design-caption h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    color: gray;
+}
+
+.same-core {
+    display: block;
+    margin-left: 90px;
+    opacity: 0;
+    animation: fadeSlideIn 2s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
