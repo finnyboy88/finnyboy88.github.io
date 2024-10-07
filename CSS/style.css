@@ -14,7 +14,7 @@ html, body {
     text-align: center;
     opacity: 0;
     animation-delay: 5;
-    animation: intro 5s ease forwards;   
+    animation: fadeSlideInTop 3s ease forwards;   
 }
 
 #theme-color {
@@ -155,50 +155,6 @@ nav.menu ul li .dropdown-content a {
     animation-delay: 1s;
 }
 
-@keyframes intro {
-    0% {
-        overflow-y: hidden;
-    }
-    100% {
-        opacity: 1;
-        overflow-y: visible;
-    }
-}
-
-@keyframes fadeSlideInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-@keyframes fadeSlideInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeSlideInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .topic-header {
     text-align: right;
     position: static;
@@ -206,6 +162,39 @@ nav.menu ul li .dropdown-content a {
     opacity: 0;
     animation: fadeSlideInRight 2s ease forwards;
     animation-delay: 2s;
+}
+
+.go-down-arrow {
+    background-color: #2DD881;
+    opacity: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 30px;  /* Explicitly setting size */
+    height: 30px; /* Explicitly setting size */
+    margin-left: -10px;
+    box-sizing: border-box;
+    animation: fadeSlideInBottom 2s ease forwards;
+    animation-delay: 2s; /* Add delay here */
+}
+
+.go-down-arrow:hover {
+    animation: arrowDownHover 0.5s ease forwards;
+}
+
+@keyframes arrowDownHover {
+    0% {
+        opacity: 1;
+        background-color: #ffffff;
+    }
+    100% {
+        opacity: 1;
+        background-color: #2DD881;
+    }
 }
 
 .center-text-block {
@@ -243,4 +232,57 @@ nav.menu ul li .dropdown-content a {
 
 .back-to-top:hover{
     background-color: #1d7246;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSlideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeSlideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeSlideInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
