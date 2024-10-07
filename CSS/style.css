@@ -152,6 +152,15 @@ nav.menu ul li .dropdown-content a {
     animation-delay: 1s;
 }
 
+@keyframes intro {
+    0% {
+        overflow-y: hidden;
+    }
+    100% {
+        overflow-y: visible;
+    }
+}
+
 @keyframes fadeSlideInLeft {
     0% {
         opacity: 0;
@@ -162,6 +171,7 @@ nav.menu ul li .dropdown-content a {
         transform: translateX(0);
     }
 }
+
 
 @keyframes fadeSlideInRight {
     0% {
