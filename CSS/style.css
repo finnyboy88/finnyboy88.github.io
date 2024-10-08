@@ -169,7 +169,7 @@ nav.menu ul li .dropdown-content a {
     justify-content: center;
     position: absolute;
     bottom: 100px;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     animation: fadeSlideInBottom 2s ease forwards;
     animation-delay: 1s;
