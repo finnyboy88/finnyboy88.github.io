@@ -130,18 +130,18 @@ nav.menu ul li .dropdown-content a {
 }
 
 .main-caption h1 {
-    font-size: 9rem;
+    font-size: 7vw;
     margin: 0;
 }
 
 .main-caption h2 {
-    font-size: 32px;
+    font-size: 2.5vw;
     margin-top: 20px;
     color: black;
 }
 
 .design-caption h3 {
-    font-size: 30px;
+    font-size: 1.5vw;
     font-weight: normal;
     margin: 0;
     color: gray;
@@ -169,7 +169,7 @@ nav.menu ul li .dropdown-content a {
     justify-content: center;
     position: absolute;
     bottom: 100px;
-    left: 45%;
+    left: 47.5%;
     transform: translateX(-50%);
     animation: fadeSlideInBottom 2s ease forwards;
     animation-delay: 1s;
