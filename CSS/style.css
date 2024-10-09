@@ -30,14 +30,14 @@ html, body {
 }
 
 header .logo, footer .logo {
-    font-size: 30px;
+    font-size: 1.5vw;
     font-weight: bold;
     position: absolute;
     color: black;
 }
 
 header .logo {
-    top: 20px;
+    top: 10px;
     left: 20px;
 } 
 
