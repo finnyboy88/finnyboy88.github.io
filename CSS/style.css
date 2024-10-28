@@ -157,10 +157,38 @@ nav.menu ul li .dropdown-content a {
 
 .topic-header {
     text-align: right;
-    position: static;
-    padding-right: 15%;
+    padding-right: 5%;
     opacity: 0;
     animation: fadeSlideInRight 2s ease forwards;
+    animation-delay: 2s;
+}
+
+.topic-image {
+    float: right; 
+    width: 200px;  /* Set a fixed width */
+    height: 200px; /* Set the same fixed height to make it a circle */
+    margin: 0 500px 20px 20px;  /* Add spacing */
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 2s;
+}
+
+.topic-image img {
+    width: 200%;
+    height: 200%;  /* Ensures the image fills the container */
+    object-fit: cover;  /* Ensures the image is cropped to fit the circle */
+    border-radius: 50%;  /* Makes it a perfect circle */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);  /* Optional: add a shadow */
+}
+
+.topic-text {
+    width: 60%;
+    max-width: 900px;
+    margin-left: 4%;
+    margin-right: 15%;
+    word-wrap: break-word;
+    opacity: 0;
+    animation: fadeSlideInLeft 2s ease forwards;
     animation-delay: 2s;
 }
 
@@ -199,6 +227,15 @@ nav.menu ul li .dropdown-content a {
 
 .about-me h1 {
     font-size: 140px;
+}
+
+.about-me h2 {
+    font-size: 35px;
+}
+
+.about-me h3 {
+    font-size: 50px;
+    color: white;
 }
 
 .about-me {
